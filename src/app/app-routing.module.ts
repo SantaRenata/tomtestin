@@ -1,3 +1,13 @@
+/*
+* File: app-routing.module.ts
+* Author: Sánta Renáta Diána
+* Copyright: 2023, Sánta Renáta Diána
+* Group: Szoft II N
+* Date: 2023-02-04
+* Github: https://github.com/SantaRenata/
+* Licenc: GNU GPL
+*/
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
