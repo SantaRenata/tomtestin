@@ -1,1 +1,17 @@
-<p>bodyindex works!</p>
+<h2>Testtömeg-index számító</h2>
+<h3>Feladat 0323</h3>
+<div class="bodyindexForm">
+    <div class="mb-3">
+        <label for="">Kg:</label>
+        <input type="text" placeholder="Kg" [formControl]="kg" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="">Magasság(méter):</label>
+        <input type="text" placeholder="Méter" [formControl]="height" class="form-control" (keyup)="onKeyup($event)">
+    </div>
+
+    <div class="mb-3">
+        <label for="">Testtömeg-index:</label>
+        <input type="text" placeholder="Testtömeg_index" readonly [formControl]="bodyindex" class="form-control">
+    </div>
+</div>
