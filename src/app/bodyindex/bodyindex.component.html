@@ -10,7 +10,9 @@
         <input type="text" placeholder="Méter" [formControl]="height" class="form-control" (keyup)="onKeyup($event)">
     </div>
 
-    <div class="mb-3">
+    <button (click)="onClickButton()" class="mb-3 btn btn-dark">Számol</button>
+
+    <div class="mb-3" *ngIf="bodyindexVisible">
         <label for="">Testtömeg-index:</label>
         <input type="text" placeholder="Testtömeg_index" readonly [formControl]="bodyindex" class="form-control">
     </div>

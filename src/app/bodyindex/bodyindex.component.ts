@@ -10,6 +10,8 @@ export class BodyindexComponent implements OnInit {
   kg = new FormControl('');
   height = new FormControl('');
   bodyindex = new FormControl('');
+
+  bodyindexVisible = false;
   
   ngOnInit(): void {
     
@@ -25,11 +27,16 @@ export class BodyindexComponent implements OnInit {
     this.startCalc();
   }
 
+  onClickButton(){
+    this.startCalc();
+  }
+
   startCalc(){
     let kg = Number(this.kg.value);
     let height = Number(this.height.value);
     let bodyindex = this.calcBodyIndex(kg,height);
     this.bodyindex.setValue(String(bodyindex));
+    this.bodyindexVisible = true;
   }
 
   calcBodyIndex(kg:number,height:number){
